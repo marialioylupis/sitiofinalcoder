@@ -3,7 +3,10 @@ agregarAlCarritoBotones.forEach((botonAgregarAlCarrito) => {
     botonAgregarAlCarrito.addEventListener('click', añadirAlCarrito);
 })
 
-var seccionCarrito = document.querySelector('#agregarcarrito');
+const comprarBoton = document.querySelector('.botonComprar');
+comprarBoton.addEventListener('click', botonComprar);
+
+const seccionCarrito = document.querySelector('#agregarcarrito');
 
 function añadirAlCarrito (event) {
     const boton = event.target;
@@ -19,8 +22,8 @@ function agregarItemAlCarrito (itemTitulo, itemPrecio){
     const nombreElementos = seccionCarrito.getElementsByClassName('titulo');
     for (let i = 0; i < nombreElementos.length; i++){
         if (nombreElementos[i].innerText === itemTitulo){
-            var cantidadElementos = nombreElementos[i].parentElement.querySelector('.cantidadItems');
-            cantidadElementos.value++;
+            var cantidadDeElementos = nombreElementos[i].parentElement.querySelector('.cantidadItems');
+            cantidadDeElementos.value++;
             precioTotal();
             return;
         }
@@ -72,5 +75,10 @@ function cantidadElementos (event){
     if (input.value <= 0){
         input.value = 1;
     }
+    precioTotal();
+}
+
+function botonComprar(){
+    seccionCarrito.innerHTML = '';
     precioTotal();
 }
