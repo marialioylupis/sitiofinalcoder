@@ -39,7 +39,7 @@ function agregarItemAlCarrito (itemTitulo, itemPrecio){
     const divCarrito = document.createElement('div');
     divCarrito.className = 'estilodivcarrito';
     const contenidoCarrito = 
-      `<div class="shoppingCartItem">
+      `<div class="ItemEnCarrito">
       <p class="titulo">${itemTitulo}</p>
       <p class="precio texto">${itemPrecio}</p>
       <input class="cantidadItems" type="number" value="1">
@@ -59,7 +59,7 @@ function agregarItemAlCarrito (itemTitulo, itemPrecio){
 function precioTotal (){
     let total = 0;
     const precioCartTotal = document.querySelector('.preciototal');
-    const itemsCarrito = document.querySelectorAll ('.shoppingCartItem');
+    const itemsCarrito = document.querySelectorAll ('.ItemEnCarrito');
 
 //Un forEach que recorre los productos del carritp, tomando su precio y cantidad
     itemsCarrito.forEach((shoppingCartItem) =>{
@@ -77,7 +77,7 @@ function precioTotal (){
 //Funcion para eliminar elementos del carrito + que se edite el precio total
 function borrarElementoCarrito (event){
     const botonClick = event.target;
-    botonClick.closest('.shoppingCartItem').remove();
+    botonClick.closest('.ItemEnCarrito').remove();
     precioTotal();
 }
 
