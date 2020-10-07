@@ -95,3 +95,14 @@ function botonComprar(){
     seccionCarrito.innerHTML = '';
     precioTotal();
 }
+
+var botonCerrarCarrito = $('.botonCierreCarito')
+var shoppingcartbutton = $('.fa-shopping-cart');
+
+shoppingcartbutton.click(function(){
+    $('#sidebar').toggleClass('active');
+  })
+
+  botonCerrarCarrito.click(function(){
+    $('#sidebar').toggleClass('active');
+  })
