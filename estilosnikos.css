@@ -276,3 +276,22 @@ button{
     height: 20px;
     width: 50px;
 }
+
+.productosNikos{
+    margin-bottom: 80px;
+}
+
+#sidebar{
+    position: fixed;
+    margin-left: 1000px;
+    width: 350px;
+    height: 100%;
+    background-color: #b2c8ce;
+    left: 350px;
+    transition: all 500ms linear;
+    padding-top: 30px;
+}
+
+#sidebar.active{
+    left:0;
+}
