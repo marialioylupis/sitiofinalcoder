@@ -1,0 +1,298 @@
+.videoback{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -10;
+    margin: none;
+}
+
+#header{
+    margin-bottom: 75px;
+}
+
+.logo{
+    margin-top: 65px;
+    margin-left: 90px;
+}
+
+.searchbar{
+    margin-left: 250px;
+    padding-right: 40px;
+    position: absolute;
+    margin-top: 120px;
+    font-family: montserrat;
+    font-weight: lighter;
+    font-size: 14pt;
+    border: none;
+    background-color: white;
+    opacity: 70%;
+}
+
+.fa-search{
+    margin-left: 220px; 
+    position: absolute;
+    margin-top: 125px; 
+    color: grey;
+    opacity: 70%;
+}
+
+.fa-user{
+    color: grey; 
+    position: absolute; 
+    margin-left: 870px;
+    margin-top: 125px; 
+    opacity: 70%;
+}
+
+.fa-shopping-cart{
+    color: grey; 
+    position: absolute; 
+    margin-left: 910px;
+    margin-top: 125px; 
+    opacity: 70%;
+    cursor: pointer;
+}
+
+body{
+    margin:0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.col:hover{
+    color: #18929b;
+    font-weight: 400;
+}
+
+#contenido{
+    margin-top: 100px;
+}
+
+.contenidodos{
+    display: flex;
+    justify-content: row;
+}
+
+.col{
+    font-family: montserrat;
+    font-weight: lighter;
+    margin-left: 90px;
+    font-size: 18pt;
+}
+
+.frase{
+    font-family: helvetica neue;
+    font-weight: bold;
+    color: #dad8c0;
+    font-size: 60px;
+    display:flex;
+    justify-content: flex-end;
+    margin: 10px;
+    margin-right: 75px;
+}
+
+.imagenproductos{
+    width: 600px;
+    height: auto;
+    margin-left: 60px;
+}
+
+.shopnow{
+    font-family: montserrat;
+    font-weight: lighter;
+    margin-left: 210px;
+    font-size: 18pt;
+    text-decoration: underline;
+    margin-top: 250px;
+}
+
+.location{
+    font-family: montserrat;
+    text-align: center;
+    font-size: 16pt;
+    font-weight: lighter;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.titulo{
+    font-family: montserrat;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.texto{
+    font-family: montserrat;
+    font-weight: lighter;
+    font-size: 12pt;
+}
+
+.misproductos{
+    display: flex;
+    flex-direction: row;
+    width: 320px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+.producto{
+    padding-left: 70px;
+}
+
+.estilodivcarrito{
+    margin-left: 90px;
+}
+
+button{
+    font-family: montserrat;
+    font-size: 12pt;
+    border: none;
+    background-color: #dad8c0;
+    color: grey;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.contactform{
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+    width: 50%;
+}
+
+.inputform{
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 12pt;
+}
+
+.titulolabel{
+    font-family: montserrat;
+    display: inline-block;
+    font-size: 14pt;
+    padding-bottom: 5px;
+    width: 250px;
+}
+  
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+.popup {
+    margin: 70px auto;
+    padding-top: 20px;
+    padding-right: none;
+    padding-left: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+.popup h2 {
+    margin-top: 30px;
+    width: 350px;
+    color: #333;
+    font-family: montserrat;
+  }
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+
+.inputnewsletter{
+    margin-top: 20px;
+    width: 320px;
+    padding-bottom: 10px;
+    font-size: 12pt;
+    font-family: montserrat;
+}
+
+@media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+
+  .buttonnewsletter{
+    display: flex;
+    flex-direction: column; 
+    margin-top: 20px; 
+    margin-bottom: 50px;
+  }
+
+  .buttonnewsletter :hover{
+    font-weight: 0px;
+    color: black;
+  }
+
+.addtocart{
+    cursor: grab;
+}
+
+#botonenviar{
+    font-family: montserrat;
+    font-size: 12pt;
+    border: none;
+    background-color: #dad8c0;
+    color: grey;
+    margin-bottom: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.cantidadItems{
+    height: 20px;
+    width: 50px;
+}
+
+.productosNikos{
+    margin-bottom: 80px;
+}
+
+#sidebar{
+    position: absolute;
+    margin-left: 1000px;
+    width: 350px;
+    height: 675px;
+    background-color: #b2c8ce;
+    left: 350px;
+    transition: all 500ms linear;
+    padding-top: 30px;
+}
+
+#sidebar.active{
+    left:0;
+}
