@@ -3,27 +3,38 @@ section{
     top: 0;
     left: 0;
     width: 100%;
-    height: 85%;
+    height: 100%;
+    align-items: center;
     background: url(img/grecia.jpg);
-    background-attachment: fixed;
+    background-attachment: local;
     clip-path: circle(0px at center);
 }
 
 .container{
     position: relative;
-    margin-top: 200vh;
-    background: #fff;
-    padding: 100px;
+    margin-top: 70vh;
+    padding: 20px;
+    padding-bottom: 90px;
+}
 
+.videoback{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -10;
+    margin: none;
+}
+
+.container video{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -10;
+    margin: none;
 }
 
 h2{
     font-family: montserrat;
-}
-
-.container h2{
-    font-size: 2.5em;
-    margin-bottom: 20px;
 }
 
 .titulohola{
@@ -34,14 +45,6 @@ h2{
     text-align: center;
     width: 100%;
     font-family: montserrat;
-}
-
-.videoback{
-    width: 100%;
-    height: auto;
-    position: absolute;
-    z-index: -10;
-    margin: none;
 }
 
 #header{
@@ -126,6 +129,7 @@ a{
 .contenidodos{
     display: flex;
     justify-content: row;
+    background-color: white;
 }
 
 .col{
@@ -138,7 +142,7 @@ a{
 .frase{
     font-family: montserrat;
     font-weight: bold;
-    color: #dad8c0;
+    color: #aead98;
     font-size: 60px;
     display:flex;
     justify-content: flex-end;
