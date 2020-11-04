@@ -114,12 +114,6 @@ function cantidadElementos (event){
 //Funcion para que cada vez que apreto el boton comprar se borre el carrito
 function botonComprar(){
     seccionCarrito.innerHTML = '';
-    const compraCarrito = document.querySelector(".seccionComprar");
-    const contenidoCompraCarrito = 
-      `<div>
-      <p class="titulo" style="color: #396a6b;">Tu compra se realizó exitosamente!</p>
-      </div>`
-      compraCarrito.innerHTML=contenidoCompraCarrito;
     precioTotal();
 }
 
