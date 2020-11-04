@@ -341,7 +341,7 @@ button{
 #sidebar{
     position: absolute;
     display: none;
-    width: 350px;
+    width: 300px;
     background-color: rgba(178, 200, 206, 0.9);
     padding: 30px;
 }
